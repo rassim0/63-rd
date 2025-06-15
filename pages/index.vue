@@ -1,25 +1,18 @@
 <template>
-   <ClientOnly>
+  <ClientOnly>
     <Header />
-  </ClientOnly>
-  <Promo />
-  <SecndHea />
-  <Grid />
-  <SecndHea />
-  <ClientOnly>
+    <Promo />
+    <SecndHea />
+    <Grid />
+    <SecndHea />
     <Video />
-  </ClientOnly>
-  <SecndHea />
-  <ClientOnly>
+    <SecndHea />
     <Sube />
+    <SecndHea />
+    <Ask />
+    <Sign />
+    <Footer />
   </ClientOnly>
-  <SecndHea />
-  <Ask />
-  <Sign />
-  <Footer />
-
-
-
 </template>
 <script setup>
 
