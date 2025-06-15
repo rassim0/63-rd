@@ -5,7 +5,9 @@
   <SecndHea />
   <Grid />
   <SecndHea />
+  <ClientOnly>
   <Video />
+  </ClientOnly>
   <SecndHea />
   <Sube />
   <SecndHea />
