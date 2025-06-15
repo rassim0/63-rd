@@ -16,12 +16,12 @@
 
 
 
-    <button class="toggle-button">
-       <label class="switch">
-  <input type="checkbox" v-model="isYearly">
-  <span class="slider"></span>
-</label>
-    </button>
+    <div class="toggle-button">
+  <label class="switch">
+    <input type="checkbox" v-model="isYearly">
+    <span class="slider"></span>
+  </label>
+</div>
 
 
 
@@ -118,7 +118,7 @@
 
 import { ref } from 'vue'
 
-//const isYearly = ref(false);
+const isYearly = ref(false);
 
 </script>
 

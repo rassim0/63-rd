@@ -58,7 +58,7 @@
 <div class="container">
     <!-- Hero Section -->
     <section class="hero">
-      <h1 class="hero-title"> <span class="col">Intelligent </span>  cloud-based <span class="col">note-taking</span>  and collaboration tool</h1>
+      <h1 class="hero-title"> <span class="col">Intelligent </span>  cloud-based <span class="col">note-taking</span> and collaboration tool</h1>
       <p class="hero-description">
        Experience the power of smart note-taking and transform the way you work today.
       </p>
@@ -82,7 +82,7 @@
 
 <script setup>
 import { ref } from 'vue'
-//const isMenuOpen = ref(false)
+const isMenuOpen = ref(false)
 
 
 </script>

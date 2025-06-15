@@ -2,7 +2,7 @@
   <div class="info-grid-container">
     <!-- First Div: Title + Subtitle -->
     <div class="info-section">
-      <h2 class="info-title">Discover the Power of <span class="tit">SmartNotes</span> </h2>
+      <h2 class="info-title">Discover the Power of <span class="tit">SmartNotes</span></h2>
       <p class="info-text">
        SmartNotes is packed with innovative features designed to revolutionize the way you take notes, collaborate with others, and stay organized.
       </p>

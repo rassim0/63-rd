@@ -64,7 +64,7 @@
 
 
   </div>
-</footer>
+
 
   <!-- 4. Social and Copyright -->
     <div class="footer-bottom">
@@ -77,11 +77,11 @@
       </div>
     
 
-        <p class="footer-copy">@2024 SmartNotesI. All Rights Reserved. <span class="under">@iamhervewabo</span> </p>
+        <p class="footer-copy">©2024 SmartNotesI. All Rights Reserved. <span class="under">@iamhervewabo</span> </p>
     
     </div>
 
-
+</footer>
 
 </template>
 

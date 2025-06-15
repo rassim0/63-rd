@@ -6,7 +6,7 @@
   <!-- Main Content -->
   <div class="content">
     <div class="text-content">
-      <h1 class="title">Unlock the Full Potential of <span class="tit">SmartNotes</span> </h1>
+      <h1 class="title">Unlock the Full Potential of <span class="tit">SmartNotes</span></h1>
       <p class="description">
         Ready to streamline your workflow and boost your productivity? Start your free trial of SmartNotes today and experience the power of smart note-taking.
       </p>
