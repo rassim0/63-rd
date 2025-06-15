@@ -6,10 +6,6 @@
   </div>
   </div>
 
-  <head>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
 </template>
 
 <style >
