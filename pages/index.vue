@@ -10,9 +10,10 @@
     <Sube />
     <SecndHea />
     <Ask />
-    <Sign />
-  </ClientOnly>
+    <Sign /> 
     <Footer />
+  </ClientOnly>
+   
   
 </template>
 <script setup>
