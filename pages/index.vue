@@ -1,5 +1,5 @@
 <template>
-  <ClientOnly>
+
     <Header />
     <Promo />
     <SecndHea />
@@ -12,7 +12,7 @@
     <Ask />
     <Sign /> 
     <Footer />
-  </ClientOnly>
+
    
   
 </template>
