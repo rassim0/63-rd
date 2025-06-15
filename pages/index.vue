@@ -10,9 +10,11 @@
     <Sube />
     <SecndHea />
     <Ask />
-    <Sign /> 
-    <Footer />
-
+    <Sign />   
+    <ClientOnly>
+      <Footer />
+    </ClientOnly>
+    
    
   
 </template>
