@@ -27,15 +27,7 @@
 
 
 <script setup>
-onMounted(() => {
-  const video = document.getElementById('myVideo');
-  const playButton = document.getElementById('playButton');
 
-  playButton.addEventListener('click', () => {
-    video.play();
-    playButton.style.display = 'none';
-  });
-});
 </script>
 
 <style scoped>
