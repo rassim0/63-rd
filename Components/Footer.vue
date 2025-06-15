@@ -64,7 +64,7 @@
 
 
   </div>
-
+</footer>
 
   <!-- 4. Social and Copyright -->
     <div class="footer-bottom">
@@ -81,7 +81,7 @@
     
     </div>
 
-</footer>
+
 
 </template>
 

@@ -1,125 +1,102 @@
 <template>
-
-
-<div class="mixture-container">
-  <!-- First Div -->
-  <div class="section section-1">
-    <h1 class="main-title">  <span class="uu">Pricing</span> & Plans</h1>
-    <p class="description">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-  </div>
-
-  <!-- Second Div -->
-  <div class="section section-2">
-<span class="pricing-option" :class="{ active: !isYearly }">Monthly</span>
-
-
-
-
-
-    <div class="toggle-button">
-  <label class="switch">
-    <input type="checkbox" v-model="isYearly">
-    <span class="slider"></span>
-  </label>
-</div>
-
-
-
-<span class="pricing-option" :class="{ active: isYearly }">Yearly</span>
-    <span class="save-tag"> <span class="et">Save 25%</span></span>
-  </div>
-  
-
-  <!-- Third Div with Grid Layout -->
-  <div class="section section-3 grid-boxes">
-    <!-- Box 1 -->
-    <div class="box box-1" style="grid-area: one;">
-      <div class="box-header">
-        <span class="icon"><img src="/box-1.svg"></span>
-        <span class="box-title">Individual Plan</span>
-      </div>
-
-
-
-
-      <h2 class="price-title">
-    {{ isYearly ? '$99.99' : '$9.99' }}
-    <span class="month">/ {{ isYearly ? 'year' : 'month' }}</span>
-  </h2>
-
-
-
-
-      <ul class="features">
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Real-time collaboration</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> AI-powered organization</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Customizable templates</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> 5GB cloud storage</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Basic integrations</li>
-      </ul>
-<button class="main-button">Contact support <img src="/box-1-btt.svg" /> </button>    
-  <p class="footer-note">No credit card required</p>
+  <div class="mixture-container">
+    <!-- First Div -->
+    <div class="section section-1">
+      <h1 class="main-title"><span class="uu">Pricing</span> & Plans</h1>
+      <p class="description">
+        With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
+      </p>
     </div>
 
-    <!-- Box 2 -->
-    <div class="box box-two" style="grid-area: two;">
-      <div class="box-header">
-        <span class="icon"><img src="/box-2.svg"></span>
-        <span class="box-title">Team Plan</span>
+    <!-- Second Div -->
+    <div class="section section-2">
+      <span class="pricing-option" :class="{ active: !isYearly }">Monthly</span>
+
+      <div class="toggle-button">
+        <label class="switch">
+          <input type="checkbox" v-model="isYearly">
+          <span class="slider"></span>
+        </label>
       </div>
 
-
-      
-      <h2 class="price-title">
-    {{ isYearly ? '$199.99' : '$19.99' }}
-    <span class="month">/ {{ isYearly ? 'year' : 'month' }}</span>
-  </h2>
-
-
-
-      <ul class="features">
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Everything in the Individual Plan</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Unlimited cloud storage</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Advanced integrations</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Team management and permissions</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Shared templates and note libraries</li>
-      </ul>
-      <button class="main-button">Start Free Trial  <img src="/box-2-btt.svg" /></button>
-      <p class="footer-note">No credit card required</p>
+      <span class="pricing-option" :class="{ active: isYearly }">Yearly</span>
+      <span class="save-tag"><span class="et">Save 25%</span></span>
     </div>
 
-    <!-- Box 3 -->
-    <div class="box box-3" style="grid-area: three;">
-      <div class="box-header">
-        <span class="icon"><img src="/box-3.svg"></span>
-        <span class="box-title">Enterprise Plan</span>
+    <!-- Third Div with Grid Layout -->
+    <div class="section section-3 grid-boxes" v-if="isMounted">
+      <!-- Box 1 -->
+      <div class="box box-1" style="grid-area: one;">
+        <div class="box-header">
+          <span class="icon"><img src="/box-1.svg"></span>
+          <span class="box-title">Individual Plan</span>
+        </div>
+        <h2 class="price-title">
+          {{ isYearly ? '$99.99' : '$9.99' }}
+          <span class="month">/ {{ isYearly ? 'year' : 'month' }}</span>
+        </h2>
+        <ul class="features">
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Real-time collaboration</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> AI-powered organization</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Customizable templates</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> 5GB cloud storage</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Basic integrations</li>
+        </ul>
+        <button class="main-button">Contact support <img src="/box-1-btt.svg" /></button>
+        <p class="footer-note">No credit card required</p>
       </div>
-      <h2 class="price-title">Custom</h2>
-      <ul class="features">
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Everything in the Team Plan</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Dedicated account manager</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Enterprise-grade security</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Customized onboarding</li>
-        <li><span class="feature-icon"><img src="/chek.svg"  /></span> Advanced analytics</li>
-      </ul>
-      <button class="main-button">Contact support <img src="/box-1-btt.svg" /> </button>
-      <p class="footer-note"></p>
+
+      <!-- Box 2 -->
+      <div class="box box-two" style="grid-area: two;">
+        <div class="box-header">
+          <span class="icon"><img src="/box-2.svg"></span>
+          <span class="box-title">Team Plan</span>
+        </div>
+        <h2 class="price-title">
+          {{ isYearly ? '$199.99' : '$19.99' }}
+          <span class="month">/ {{ isYearly ? 'year' : 'month' }}</span>
+        </h2>
+        <ul class="features">
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Everything in the Individual Plan</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Unlimited cloud storage</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Advanced integrations</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Team management and permissions</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Shared templates and note libraries</li>
+        </ul>
+        <button class="main-button">Start Free Trial <img src="/box-2-btt.svg" /></button>
+        <p class="footer-note">No credit card required</p>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="box box-3" style="grid-area: three;">
+        <div class="box-header">
+          <span class="icon"><img src="/box-3.svg"></span>
+          <span class="box-title">Enterprise Plan</span>
+        </div>
+        <h2 class="price-title">Custom</h2>
+        <ul class="features">
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Everything in the Team Plan</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Dedicated account manager</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Enterprise-grade security</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Customized onboarding</li>
+          <li><span class="feature-icon"><img src="/chek.svg" /></span> Advanced analytics</li>
+        </ul>
+        <button class="main-button">Contact support <img src="/box-1-btt.svg" /></button>
+        <p class="footer-note"></p>
+      </div>
     </div>
   </div>
-</div>
-
-
 </template>
 
-
-
-
 <script setup>
+import { ref, onMounted } from 'vue'
 
-import { ref } from 'vue'
+const isYearly = ref(false)
+const isMounted = ref(false)
 
-const isYearly = ref(false);
-
+onMounted(() => {
+  isMounted.value = true
+})
 </script>
 
 

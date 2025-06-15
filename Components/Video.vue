@@ -1,23 +1,21 @@
 <template>
   <div class="video-wrapper">
+    <!-- Decorative Images -->
+    <img src="/effect.png" alt="Decorative Top Left" class="decorative-image top-left" />
+    <img src="/effect.png" alt="Decorative Bottom Right" class="decorative-image bottom-right" />
 
-      <!-- Decorative Images -->
-      <img src="/effect.png" alt="Decorative Top Left" class="decorative-image top-left">
-      <img src="/effect.png" alt="Decorative Bottom Right" class="decorative-image bottom-right">
     <div class="video-container">
-    
-
       <!-- Overlay background -->
       <div class="video-overlay"></div>
 
       <!-- Video player -->
-      <video id="myVideo" class="custom-video" poster="/BG.png" preload="metadata">
+      <video ref="video" class="custom-video" poster="/BG.png" preload="metadata">
         <source src="/supercar.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <!-- Play button (stacked images) -->
-      <button class="play-button" id="playButton">
+      <!-- Play button -->
+      <button class="play-button" @click="togglePlay">
         <img src="/Oval.svg" alt="Background Button" class="jj" />
         <img src="/Path.png" alt="Foreground Icon" class="hh" />
       </button>
@@ -25,10 +23,26 @@
   </div>
 </template>
 
-
 <script setup>
+import { ref, onMounted } from 'vue'
 
+const video = ref(null)
+
+function togglePlay() {
+  if (!video.value) return
+  if (video.value.paused) {
+    video.value.play()
+  } else {
+    video.value.pause()
+  }
+}
+
+// Optional: add any other video setup inside onMounted, if needed
+onMounted(() => {
+  // You could set video properties or listeners here if necessary
+})
 </script>
+
 
 <style scoped>
 .video-wrapper {

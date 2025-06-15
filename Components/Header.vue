@@ -20,16 +20,17 @@
     <button class="button-1">
       <img  src="/navbarBTT.svg" alt="Open Menu" />
     </button>
-
+<ClientOnly>
     <!-- Mobile Burger -->
     <button class="burger-button" @click="isMenuOpen = !isMenuOpen">
   <img
     :src="isMenuOpen ? '/Xbb.svg' : '/Hamburger.svg'"
     :alt="isMenuOpen ? 'Close Menu' : 'Open Menu'"
   />
-</button>
-  </div>
-
+  </button>
+  </ClientOnly>
+</div>
+<ClientOnly>
     <!-- Overlay Menu -->
     <div class="menu-overlay" :class="{ 'show': isMenuOpen }">
 
@@ -52,8 +53,9 @@
         <img src="/TWW.svg" alt="icon3" />
         <img src="/YYT.svg" alt="icon4" />
       </div>
+    
     </div>
-
+</ClientOnly>
     </nav>
 <div class="container">
     <!-- Hero Section -->
@@ -81,8 +83,11 @@
 </template>
 
 <script setup>
+
+
 import { ref } from 'vue'
 const isMenuOpen = ref(false)
+
 
 
 </script>
