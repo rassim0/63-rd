@@ -11,8 +11,9 @@
     <SecndHea />
     <Ask />
     <Sign />
-    <Footer />
   </ClientOnly>
+    <Footer />
+  
 </template>
 <script setup>
 
