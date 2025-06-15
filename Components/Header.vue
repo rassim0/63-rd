@@ -18,16 +18,16 @@
 
     <!-- Desktop Button -->
     <button class="button-1">
-      <img v-if="!isMenuOpen" src="/navbarBTT.svg" alt="Open Menu" />
+      <img  src="/navbarBTT.svg" alt="Open Menu" />
     </button>
 
     <!-- Mobile Burger -->
     <button class="burger-button" @click="isMenuOpen = !isMenuOpen">
-      <img v-if="!isMenuOpen" src="/Hamburger.svg" alt="Open Menu" />
-      <span v-else class="close-icon">
-        <img src="/Xbb.svg" alt="Close" />
-      </span>
-    </button>
+  <img
+    :src="isMenuOpen ? '/Xbb.svg' : '/Hamburger.svg'"
+    :alt="isMenuOpen ? 'Close Menu' : 'Open Menu'"
+  />
+</button>
   </div>
 
     <!-- Overlay Menu -->
