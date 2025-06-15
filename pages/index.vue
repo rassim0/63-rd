@@ -1,13 +1,14 @@
 <template>
    
-  <Header />
+   <ClientOnly><Header /></ClientOnly>
+  
   <Promo />
   <SecndHea />
   <Grid />
   <SecndHea />
   <Video />
   <SecndHea />
-  <Sube />
+  <ClientOnly><Sube /></ClientOnly>
   <SecndHea />
   <Ask />
   <Sign />
