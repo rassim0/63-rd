@@ -1,5 +1,6 @@
 <template>
 
+    <ClientOnly> 
     <Header />
     <Promo />
     <SecndHea />
@@ -11,7 +12,6 @@
     <SecndHea />
     <Ask />
     <Sign />   
-    <ClientOnly>
       <Footer />
     </ClientOnly>
     

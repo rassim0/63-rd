@@ -35,7 +35,7 @@
     <div class="menu-overlay" :class="{ 'show': isMenuOpen }">
 
 
-        <img src="/burger-li.png" alt="Decorative BG" class="burger-decoration" />
+        <img src="/Burger-li.png" alt="Decorative BG" class="burger-decoration" />
 
 
       <!-- Main Links -->
