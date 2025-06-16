@@ -12,7 +12,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.7.0",
     "@vue/shared": "^3.5.16",
-    "nuxt": "^3.17.5",
+    "nuxt": "^3.7.4",
     "pinia": "^2.0.36",
     "vue": "^3.5.11",
     "vue-bundle-renderer": "^2.1.1",

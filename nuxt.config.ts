@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: false }, // Disable in production
+   
+  devtools: { enabled: true },
   ssr: true,
   app: {
     head: {
@@ -14,17 +15,10 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'vercel',
-    // Add this for better Vercel compatibility
-    vercel: {
-      regions: ['iad1'], // Optional: specify deployment region
-    },
+    logLevel: 1
   },
-  // Modern build settings
-  experimental: {
-    payloadExtraction: false,
-  },
-  // Ensure these are transpiled
   build: {
-    transpile: ['vue-router', 'pinia', '@vue/shared']
-  }
+    transpile: ['vue-router', 'pinia']
+  },
+  logLevel: 'verbose',
 })
