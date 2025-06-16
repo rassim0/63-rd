@@ -520,8 +520,8 @@ letter-spacing: 0%;
   /* Optional: Fix grid layout if needed */
   .section-3.grid-boxes {
     grid-template-areas: 
-    "one ""
-    "two ""
+    "one"
+    "two"
     "three";
     gap: 40px;
   }
