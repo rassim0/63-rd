@@ -1,5 +1,5 @@
 {
-  "date": "2025-06-16T14:25:36.201Z",
+  "date": "2025-06-16T14:35:39.087Z",
   "preset": "vercel",
   "framework": {
     "name": "nuxt",
@@ -12,5 +12,11 @@
     "preview": "",
     "deploy": ""
   },
-  "config": {}
+  "config": {
+    "vercel": {
+      "regions": [
+        "iad1"
+      ]
+    }
+  }
 }
