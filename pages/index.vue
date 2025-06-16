@@ -12,7 +12,7 @@
     <SecndHea />
     <Ask />
     <Sign />   
-      <Footer />
+    <Footer />
 
     
    

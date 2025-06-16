@@ -15,7 +15,6 @@ import 'unhead/server';
 import 'devalue';
 import 'unhead/utils';
 import 'unhead/plugins';
-import 'vue-router';
 
 const _imports_0$6 = publicAssetsURL("/Logo.svg");
 const _imports_1$6 = publicAssetsURL("/navbarBTT.svg");
@@ -213,4 +212,4 @@ _sfc_main.setup = (props, ctx) => {
 const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { index as default };
-//# sourceMappingURL=index-Be1SskzU.mjs.map
+//# sourceMappingURL=index-DnyY375S.mjs.map

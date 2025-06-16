@@ -12,8 +12,12 @@ export default defineNuxtConfig({
       ],
     },
   },
+  ssr: true,
   nitro: {
     preset: 'vercel'
+  },
+  build: {
+    transpile: ['vue-router', 'pinia']
   }
 
 })

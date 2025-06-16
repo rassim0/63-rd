@@ -16,7 +16,6 @@ import 'unhead/server';
 import 'devalue';
 import 'unhead/utils';
 import 'unhead/plugins';
-import 'vue-router';
 
 const _sfc_main = {
   __name: "error-500",
@@ -72,4 +71,4 @@ _sfc_main.setup = (props, ctx) => {
 const error500 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-4b6f0a29"]]);
 
 export { error500 as default };
-//# sourceMappingURL=error-500-jXNV61QO.mjs.map
+//# sourceMappingURL=error-500-YfSM_k7N.mjs.map

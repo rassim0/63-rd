@@ -16,7 +16,6 @@ import 'unhead/server';
 import 'devalue';
 import 'unhead/utils';
 import 'unhead/plugins';
-import 'vue-router';
 
 const firstNonUndefined = (...args) => args.find((arg) => arg !== void 0);
 // @__NO_SIDE_EFFECTS__
@@ -364,4 +363,4 @@ _sfc_main.setup = (props, ctx) => {
 const error404 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-06403dcb"]]);
 
 export { error404 as default };
-//# sourceMappingURL=error-404-Ud7F1S1A.mjs.map
+//# sourceMappingURL=error-404-D_1MF6LJ.mjs.map
