@@ -20,7 +20,7 @@
     <button class="button-1">
       <img  src="/navbarBTT.svg" alt="Open Menu" />
     </button>
-<ClientOnly>
+
     <!-- Mobile Burger -->
     <button class="burger-button" @click="isMenuOpen = !isMenuOpen">
   <img
@@ -28,9 +28,9 @@
     :alt="isMenuOpen ? 'Close Menu' : 'Open Menu'"
   />
   </button>
-  </ClientOnly>
+
 </div>
-<ClientOnly>
+
     <!-- Overlay Menu -->
     <div class="menu-overlay" :class="{ 'show': isMenuOpen }">
 
@@ -55,7 +55,7 @@
       </div>
     
     </div>
-</ClientOnly>
+
     </nav>
 <div class="container">
     <!-- Hero Section -->
